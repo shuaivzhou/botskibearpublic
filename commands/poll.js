@@ -3,7 +3,7 @@ module.exports = {
     description: 'create a yes/no poll',
     async execute(client, message, cmd, args, Discord) {
         const poll_desc_embed = new Discord.MessageEmbed()
-            .setColor(0xFFC300)
+            .setColor('#FF0000')
             .setTitle("Initiate Poll")
             .setDescription("%poll [QUESTION] to create a simple yes or no poll.");
 
