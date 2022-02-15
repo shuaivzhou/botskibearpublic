@@ -35,7 +35,6 @@ module.exports = {
         try {
             const random_image = random(images);
             const file = await new Discord.MessageAttachment(`${path}${random_image}`);
-            await message.reply(`${random_image}`);
             await message.reply({files: [file]});
         } catch (err) {
             message.reply('Error, please try again.');
