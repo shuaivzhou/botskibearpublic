@@ -7,7 +7,7 @@ module.exports = {
             .setTitle("Initiate Room")
             .setDescription("%room [NAME] to create a room opened by person NAME.");
 
-        if (!args[0] || !args[1]) {
+        if (!args[0]) {
             return message.channel.send({embeds: [room_desc_embed]});
         }
 
